@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Navigation Bars</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="p-4">
+
+<div class="container">
+
+  <!-- Basic Navbar -->
+  <h3>Basic Navbar</h3>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Brand</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Vertical Navbar -->
+  <h3>Vertical Navbar</h3>
+  <div class="d-flex mb-3">
+    <ul class="nav flex-column nav-pills me-3">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Messages</a></li>
+    </ul>
+    <div>Vertical Navbar Content</div>
+  </div>
+
+  <!-- Centered Navbar -->
+  <h3>Centered Navbar</h3>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 justify-content-center">
+    <a class="navbar-brand" href="#">Centered Brand</a>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Colored Navbar -->
+  <h3>Colored Navbar</h3>
+  <nav class="navbar navbar-expand-lg navbar-light mb-3" style="background-color: #f0ad4e;">
+    <a class="navbar-brand" href="#">Colored Brand</a>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+    </ul>
+  </nav>
+
+  <!-- Navbar Brand / Logo -->
+  <h3>Navbar Brand / Logo</h3>
+  <nav class="navbar navbar-light bg-light mb-3">
+    <a class="navbar-brand" href="#">
+      <img src="https://via.placeholder.com/30" alt="Logo" class="d-inline-block align-text-top">
+      Logo Brand
+    </a>
+  </nav>
+
+  <!-- Collapsing Navigation Bar -->
+  <h3>Collapsing Navbar</h3>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+    <a class="navbar-brand" href="#">Collapsible</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Navbar With Dropdown -->
+  <h3>Navbar With Dropdown</h3>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
+    <a class="navbar-brand" href="#">Dropdown</a>
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Menu</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action 1</a></li>
+          <li><a class="dropdown-item" href="#">Action 2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Navbar Forms and Buttons -->
+  <h3>Navbar Forms and Buttons</h3>
+  <nav class="navbar navbar-light bg-light mb-3">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </nav>
+
+  <!-- Navbar Text -->
+  <h3>Navbar Text</h3>
+  <nav class="navbar navbar-light bg-light mb-3">
+    <span class="navbar-text">
+      Some text in the navbar
+    </span>
+  </nav>
+
+  <!-- Fixed Navigation Bar -->
+  <h3>Fixed Navigation Bar</h3>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
+    <a class="navbar-brand" href="#">Fixed Top</a>
+  </nav>
+  <div style="margin-top: 60px;">Scroll down to see fixed navbar effect.</div>
+
+  <!-- Sticky Navigation Bar -->
+  <h3>Sticky Navigation Bar</h3>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top mb-3">
+    <a class="navbar-brand" href="#">Sticky Top</a>
+  </nav>
+
+</div>
+
+</body>
+</html>
